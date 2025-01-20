@@ -53,3 +53,5 @@ let book1 = new Book("To kill a Mockng", "Harper Lee", 1960)
 
 console.log(book1.year);
 book1.updateYear = 9000
+console.log(book1.year);
+book1.title="ppgirls"
