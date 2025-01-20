@@ -17,20 +17,39 @@
 
 
 
-EXAMPLE 2.
+// EXAMPLE 2. (CONSTRUCTORS)
 
-function Book(title, author, year) {
-    this.title = title
-    this.author = author
-    this.year = year
-    this.titleLength = title.length
-    this.getSummary = function() {
-        console.log(`The title of this book is ${this.title}, and the author of this book is ${this.author}, in the year ${this.year}.`)
+// function Book(title, author, year) {
+//     this.title = title
+//     this.author = author
+//     this.year = year
+//     this.titleLength = title.length
+//     this.getSummary = function() {
+//         console.log(`The title of this book is ${this.title}, and the author of this book is ${this.author}, in the year ${this.year}.`)
 
+//     }
+// }
+
+// let book1 = new Book("To Kill a Mockingbird", "Harper Lee", 1960)
+
+// book1.getSummary(book1)
+
+
+EXAMPLE 3 (CLASS)
+
+class Book{
+    constructor (author, title, year) { // constructor funtion to intialize properties
+        this.title = title
+        this.author = author
+        this.year = year
+        this.titleLength = title.length
+    }
+    getSummary() {
+    console.log(`${this.title} was written by ${this.author} in the year ${this.year}`)    
     }
 }
 
-let book1 = new Book("To Kill a Mockingbird", "Harper Lee", 1960)
+let book1 = new Book("To kill a Mockng", "Harper Lee", 1960)
 
-book1.getSummary(book1)
-
+console.log(book1.year);
+book1.updateYear = 9000
