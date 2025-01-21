@@ -35,23 +35,46 @@
 // book1.getSummary(book1)
 
 
-EXAMPLE 3 (CLASS)
+// EXAMPLE 3 (CLASS)
 
-class Book{
-    constructor (author, title, year) { // constructor funtion to intialize properties
-        this.title = title
-        this.author = author
-        this.year = year
-        this.titleLength = title.length
+// class Book{
+//     constructor (author, title, year) { // constructor funtion to intialize properties
+//         this.title = title
+//         this.author = author
+//         this.year = year
+//         this.titleLength = title.length
+//     }
+//     getSummary() {
+//     console.log(`${this.title} was written by ${this.author} in the year ${this.year}`)    
+//     }
+// }
+
+// let book1 = new Book("To kill a Mockng", "Harper Lee", 1960)
+
+// console.log(book1.year);
+// book1.updateYear = 9000
+// console.log(book1.year);
+// book1.title="ppgirls"
+
+
+//TALKING ABOUT INHERITANCE
+
+class Animal{
+    constructor(name){
+        this.name = name
     }
-    getSummary() {
-    console.log(`${this.title} was written by ${this.author} in the year ${this.year}`)    
+    speak(){
+        console.log(`${this.name} makes a sound`)
     }
 }
 
-let book1 = new Book("To kill a Mockng", "Harper Lee", 1960)
+class Dog extends Animal {
+    bark() {
+        console.log(`${this.name} barks loudly`)
+    }
+}
 
-console.log(book1.year);
-book1.updateYear = 9000
-console.log(book1.year);
-book1.title="ppgirls"
+let boosky = new Dog("boosky")
+
+boosky.speak()
+boosky.bark()
