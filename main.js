@@ -78,3 +78,25 @@ let boosky = new Dog("boosky")
 
 boosky.speak()
 boosky.bark()
+
+
+
+// class Animal {
+//   constructor(name, breed, age) {
+//     super(name) = name;
+//   }
+//   speak() {
+//     console.log(`${this.name} makes a sound`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   bark() {
+//     console.log(`${this.name} barks loudly`);
+//   }
+// }
+
+// let boosky = new Dog("boosky, Lhasa, 3");
+
+// boosky.speak();
+// boosky.bark();
