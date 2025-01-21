@@ -59,31 +59,31 @@
 
 //TALKING ABOUT INHERITANCE
 
-class Animal{
-    constructor(name){
-        this.name = name
-    }
-    speak(){
-        console.log(`${this.name} makes a sound`)
-    }
-}
+// class Animal{
+//     constructor(name){
+//         this.name = name
+//     }
+//     speak(){
+//         console.log(`${this.name} makes a sound`)
+//     }
+// }
 
-class Dog extends Animal {
-    bark() {
-        console.log(`${this.name} barks loudly`)
-    }
-}
+// class Dog extends Animal {
+//     bark() {
+//         console.log(`${this.name} barks loudly`)
+//     }
+// }
 
-let boosky = new Dog("boosky")
+// let boosky = new Dog("boosky")
 
-boosky.speak()
-boosky.bark()
+// boosky.speak()
+// boosky.bark();
 
 
 
 // class Animal {
 //   constructor(name, breed, age) {
-//     super(name) = name;
+//     super(name)
 //   }
 //   speak() {
 //     console.log(`${this.name} makes a sound`);
@@ -95,8 +95,33 @@ boosky.bark()
 //     console.log(`${this.name} barks loudly`);
 //   }
 // }
-
 // let boosky = new Dog("boosky, Lhasa, 3");
 
 // boosky.speak();
 // boosky.bark();
+
+
+
+                    //CLASS WORK
+
+class Vehicle {
+    constructor(name){
+        this.name = name
+    }
+    gas() {
+        console.log(`${this.name} discharges Carbon dioxide`)
+    }
+}
+
+class Car extends Vehicle {
+    constructor (name, color, type) {
+        super(name)
+    }
+    nitro() {
+        console.log(`${this.name} discharges nitro`)
+    }
+}
+let dodge = new Car("dodge, red, SUV")
+
+dodge.gas();
+dodge.nitro();
